@@ -1,5 +1,5 @@
 {
-  "name": "foodies",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,15 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "react": "19.0.0-beta-4508873393-20240430",
+    "react-dom": "19.0.0-beta-4508873393-20240430",
+    "next": "14.3.0-canary.46",
     "better-sqlite3": "^11.0.0",
-    "next": "14.0.3",
-    "react": "^18",
-    "react-dom": "^18",
     "slugify": "^1.6.6",
     "xss": "^1.0.15"
   },
   "devDependencies": {
     "eslint": "^8",
-    "eslint-config-next": "14.0.3"
+    "eslint-config-next": "14.3.0-canary.46"
   }
 }
+
