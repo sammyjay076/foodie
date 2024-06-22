@@ -3,6 +3,20 @@ import styles from "./page.module.css";
 import { getMeal } from "@/lib/meals";
 import { notFound } from "next/navigation";
 
+// handling metadata for dynamic pages (slug)
+export async function generateMetadata({params}) {
+  const meal = getMeal(params?.slug);
+
+
+  if (!meal){
+    notFound();
+  }
+  return {
+    title: meal?.title,
+    description: meal?.summary,
+  }
+}
+
 export default function Dynamic({ params }) {
   const meal = getMeal(params.slug);
 
